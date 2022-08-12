@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_nav_graph"
+    app:startDestination="@id/allBreedsFragment">
+
+    <fragment
+        android:id="@+id/allBreedsFragment"
+        android:name="ehsan.haghdoust.shapegameassignment.view.fragment.AllBreedsFragment"
+        android:label="AllBreedsFragment"
+        tools:layout="@layout/all_breeds_fragment_layout" >
+        <action
+            android:id="@+id/action_allBreedsFragment_to_breedImagesFragment"
+            app:destination="@id/breedImagesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoritesFragment"
+        android:name="ehsan.haghdoust.shapegameassignment.view.fragment.FavoritesFragment"
+        android:label="FavoritesFragment"
+        tools:layout="@layout/favorites_fragment_layout" />
+    <fragment
+        android:id="@+id/breedImagesFragment"
+        android:name="ehsan.haghdoust.shapegameassignment.view.fragment.BreedImagesFragment"
+        android:label="BreedImagesFragment"
+        tools:layout="@layout/breed_images_fragment_layout"/>
+</navigation>
